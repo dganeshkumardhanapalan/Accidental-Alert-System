@@ -1,0 +1,274 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.21"
+            android:background="@drawable/off"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="#BCC4C2"
+            android:textSize="16sp" />
+
+        <TextView
+                   	 android:layout_width="25dp"
+                     android:layout_height="30dp"
+                     android:layout_weight="1"
+                      />
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="@string/close"
+            android:textSize="16sp"
+            android:textColor="#BCC4C2"
+            android:background="@drawable/off"
+            android:layout_weight="0.21"
+            />
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/tview"
+            android:textColor="#BCC4C2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+             <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="20dp" >
+
+            </TableRow>
+            <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                   >
+
+                 <TextView
+                     android:id="@+id/lfrmdate"
+                     android:layout_width="100dp"
+                     android:layout_height="30dp"
+                     android:gravity="center"
+                     android:text="@string/fdate"
+                     android:textColor="#BCC4C2"
+                     android:textSize="16dp" />
+
+                 <TextView
+                   	 android:layout_width="25dp"
+                     android:layout_height="30dp"
+                      />
+
+                 <DatePicker
+                     android:id="@+id/fromdate"
+                        android:layout_height="wrap_content"
+						  android:layout_width="wrap_content"/>
+
+            </TableRow>
+            <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="20dp" >
+
+            </TableRow>
+            <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                   >
+
+                 <TextView
+                     android:id="@+id/lfrmtm"
+                     android:layout_width="100dp"
+                     android:layout_height="30dp"
+                     android:gravity="center"
+                     android:text="@string/ftime"
+                     android:textColor="#BCC4C2"
+                     android:textSize="16dp" />
+
+                 <TextView
+                   	 android:layout_width="5dp"
+                     android:layout_height="10dp"
+                      />
+
+                 <TimePicker
+                     android:id="@+id/frmtm"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+            </TableRow>
+            
+             <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="20dp" >
+            
+           </TableRow>
+            <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                   >
+
+                 <CheckedTextView
+                     android:id="@+id/ltodate"
+                     android:layout_width="100dp"
+                     android:layout_height="30dp"
+                     android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                     android:checked="true"
+                     android:clickable="true"
+                     android:focusable="true"
+                     android:gravity="center"
+                     android:text="@string/tdate"
+                     android:textColor="#BCC4C2"
+                     android:textSize="16dp" />
+
+                 <TextView
+                   	 android:layout_width="25dp"
+                     android:layout_height="30dp"
+                      />
+
+                 <DatePicker
+                     android:id="@+id/todate"
+                        android:layout_height="wrap_content"
+						  android:layout_width="wrap_content"/>
+
+            </TableRow>
+            <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="20dp" >
+
+            </TableRow>
+            <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                   >
+
+                 <TextView
+                     android:id="@+id/ltotm"
+                     android:layout_width="100dp"
+                     android:layout_height="30dp"
+                     android:gravity="center"
+                     android:text="@string/ftime"
+                     android:textColor="#BCC4C2"
+                     android:textSize="16dp" />
+
+                 <TextView
+                   	 android:layout_width="5dp"
+                     android:layout_height="10dp"
+                      />
+
+                 <TimePicker
+                     android:id="@+id/totm"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+            </TableRow>
+            
+            
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="25dp" >
+            
+           </TableRow>
+           
+                           <TableRow
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                   >
+
+                  <TextView
+                      android:id="@+id/rtrace"
+                      android:layout_width="120dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/select"
+                      android:gravity="center"
+                      android:text="@string/rtrace"
+                      android:textColor="#F5EDEB"
+                      android:textSize="16sp" />
+                  <TextView
+                   	 android:layout_width="25dp"
+                     android:layout_height="30dp"
+                      />
+                  
+                  <TextView
+                      android:id="@+id/ltrace"
+                      android:layout_width="120dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/select"
+                      android:gravity="center"
+                      android:text="@string/ltrace"
+                      android:textColor="#F5EDEB"
+                      android:textSize="16sp" />
+
+            </TableRow>
+                
+
+          
+            
+        </LinearLayout>
+   
+
+        
+    </ScrollView>
+    
+   
+
+   
+   
+</RelativeLayout>
+ 

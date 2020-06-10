@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Women Security System</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="nuser">New User</string>
+    <string name="close">Close</string>
+    <string name="title">Human Safety</string>
+    <string name="uid">UserId</string>
+    <string name="pwd">Password</string>
+    <string name="ok">Ok</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_home">Home</string>
+    <string name="back">Back</string>
+    <string name="reg">Registration</string>
+    <string name="name">Name</string>
+    <string name="mno">Mobile No</string>
+    <string name="rety">Retype</string>
+    <string name="regis">Register</string>
+    <string name="clear">Clear</string>
+    <string name="rtrace">Route Trace</string>
+    <string name="ltrace">Location Trace</string>
+    <string name="emgalert">Emergency Alert</string>
+    <string name="strace">Save Trace</string>
+    <string name="set_speed">Security</string>
+    <string name="title_activity_view_trace">ViewTrace</string>
+    <string name="title_activity_chart_view">ChartView</string>
+    <string name="rdcon">Road Condition</string>
+    <string name="title_activity_admin_home">AdminHome</string>
+    <string name="tusers">Trace Users</string>
+    <string name="user_pro">Select The User Id</string>
+    <string name="title_activity_filter">Filter</string>
+    <string name="fdate">From Date</string>
+    <string name="ftime">Time</string>
+    <string name="tdate">To Date</string>
+    <string name="tview">View Traces</string>
+    <string name="cinfo">Contact Info</string>
+    <string name="title_activity_contact_info">ContactInfo</string>
+    <string name="save">Save</string>
+
+</resources>
